@@ -8,24 +8,30 @@
 </head>
 <body>
     <p id="piloto"></p>
+
     <script>
-        const piloto = {firstName:"Regys", lastName:"Souza", age:31, eyeColor:"Pardo"};
-        
-        
-        document.getElementById("piloto").innerHTML = piloto.firstName + " " + piloto.age;
-        const valorSalario = 11000;
+        const piloto = {
+            primeiroNome:"Regys",
+            ultimoNome:"Souza",
+            idade:31, 
+            corDaPele:"Pardo"
+        };
+      
+        document.getElementById("piloto").innerHTML = piloto.primeiroNome + " " + piloto.idade+"  "+piloto.corDaPele;
+        const valorSalario = 11550.50;
         const qtdeFilhos = 4;
         const bolsaFilho = qtdeFilhos * 600;
         const totalSalario = valorSalario + bolsaFilho;
         const militar = false;
      
-        console.log("piloto: "+typeof nomePiloto);
+        console.log("piloto: "+typeof piloto.primeiroNome);
         console.log("salário: "+typeof valorSalario);
         console.log("Qtde Filhos: "+typeof qtdeFilhos);
         console.log("valor bolsa: "+typeof bolsaFilho);
         console.log("valor total salário: "+typeof totalSalario);
         console.log('Militar:'+typeof militar);
-        alert("Nosso piloto é:"+piloto.firstName);
+        alert("Nosso piloto é:"+piloto.primeiroNome);
+        alert("O tipo é:"+typeof piloto.primeiroNome);
    
      </script>
   
